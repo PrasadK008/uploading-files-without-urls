@@ -28,11 +28,9 @@ app.prepare()
 
     const storage = multer.diskStorage({
       destination: (req, file, cb) => {
-        debugger;
         cb(null, 'files');
       },
       filename: (req, file, cb) =>{
-        debugger;
         cb(null, file.originalname)
       }
     });
@@ -57,12 +55,10 @@ app.prepare()
     })
 
     server.get('*', (req, res) => {
-      debugger;
       return handle(req, res)
     })
 
     server.listen(port, (err) => {
-      debugger;
       if (err) throw err
       console.log(`> Ready on http://localhost:${port}`)
     })
