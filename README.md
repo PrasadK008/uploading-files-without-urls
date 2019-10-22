@@ -6,8 +6,10 @@
  
  after downloading this project simply type 
  > npm install
+ 
  and then type
  > npm run dev
+ 
  Which will launch this application 
  & then try to upload files by clicking on browse button it will reload the file when clicked on browse button.
  
